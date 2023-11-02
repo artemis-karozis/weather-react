@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+.App .container {
+  max-width: 75%;
+  display: block;
+  margin: 50px auto;
+}
+.App .container-wrapper {
+  background-color: antiquewhite;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 30%);
+  margin-bottom: 10px;
+}
+
+.App h1,
+h3 {
+  color: #133249;
+}
+h1.location {
+  font-size: 25px;
+  color: #133249;
+}
+h3.today-detail {
+  font-size: 18px;
+  color: #133249;
+}
+.App .humidity-wind {
+  font-size: 14px;
+  color: #133249;
+  padding: 20px 0;
+}

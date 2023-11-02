@@ -1,0 +1,9 @@
+.ForecasteDays .row .forecast-rows {
+  padding: 30px 0;
+}
+
+.forecast-temperatures {
+  display: inline;
+  text-align: center;
+  padding: 0;
+}

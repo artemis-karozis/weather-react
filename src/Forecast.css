@@ -1,0 +1,42 @@
+.Forecast .forecast-icons {
+  padding: 15px 0;
+}
+.forecast-max-min {
+  padding: 15px 0;
+}
+.row.forecast-rows {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.future {
+  display: block;
+  background-color: rgb(232, 203, 203);
+  font-size: 26px;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%);
+}
+.future-day {
+  color: #133249;
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+.max-temp {
+  color: #133249;
+  font-size: 20px;
+  padding: 0 5px 0;
+}
+.min-temp {
+  color: #133249;
+  opacity: 75%;
+  font-size: 20px;
+}
+
+.forecast-temperatures {
+  display: inline;
+  text-align: center;
+  padding: 0;
+}

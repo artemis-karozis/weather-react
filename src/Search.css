@@ -1,0 +1,49 @@
+.Search .search-engine {
+  padding-bottom: 15px;
+}
+
+.Search .search_button {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.Search .btn {
+  color: #ffffff;
+  background: #535e4b;
+  font-size: 15px;
+  border: none;
+  width: auto;
+}
+
+.Search .btn:hover {
+  transition: 0.5ms ease-in-out;
+  color: #535e4b;
+  background: #ffffff;
+}
+
+.Search .btn-success {
+  --bs-btn-bg: #535e4b;
+  --bs-btn-active-bg: #535e4b;
+}
+
+.Search .exact-location-btn {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* .Search .last-updated {
+  color: rgb(118, 118, 118);
+  font-size: smaller;
+} */
+
+.Search .a {
+  /* text-decoration: none !important; */
+  color: #535e4b;
+  cursor: default;
+}
+.Search .search-box {
+  border: none;
+  padding: 0;
+}

@@ -1,0 +1,32 @@
+.TodayTemperature .today {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+  color: #133249;
+}
+
+.TodayTemperature .today-temp {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.TodayTemperature .degree-symbol {
+  font-size: 28px;
+  position: relative;
+  top: -0.75em;
+  left: 0.01em;
+}
+
+.TodayTemperature .country {
+  color: rgb(118, 118, 118);
+  font-size: smaller;
+}
+.TodayTemperature {
+  text-align: center;
+}
+
+.TodayTemperature .last-updated {
+  color: rgb(118, 118, 118);
+  font-size: smaller;
+}
