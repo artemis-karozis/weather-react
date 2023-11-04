@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationCrosshairs } from "@fortawesome/free-solid-svg-icons";
 
 export default function Search() {
   return (
@@ -24,10 +26,11 @@ export default function Search() {
           </div>
           <div className="col-md-auto p-0">
             <button className="btn btn-light exact-location-btn">
-              <i
+              <FontAwesomeIcon icon={faLocationCrosshairs} />
+              {/* <i
                 id="current-location-btn"
                 className="fa-solid fa-location-crosshairs"
-              ></i>
+              ></i> */}
             </button>
           </div>
         </div>
