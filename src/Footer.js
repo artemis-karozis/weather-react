@@ -4,6 +4,7 @@ export default function Footer() {
   return (
     <div className="Footer">
       <small>
+        This project by Artemis Karozis and is
         <a
           href="https://github.com/artemis-karozis/weather-react"
           target="blank"
@@ -11,7 +12,6 @@ export default function Footer() {
         >
           Open-source code
         </a>{" "}
-        by Artemis Karozis
       </small>
     </div>
   );

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationCrosshairs } from "@fortawesome/free-solid-svg-icons";
 
 export default function Search() {
+  const apiKey = "202t323f488633ba301345o8b10a7e9f";
+  let city = "Sydney";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+
   return (
     <div className="Search">
       <form id="location-search">
