@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TodayTemperature() {
+export default function TodayTemperature({ weatherData }) {
   return (
     <div className="TodayTemperature">
       <h1 className="location" id="search-location">

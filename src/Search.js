@@ -3,22 +3,43 @@ import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationCrosshairs } from "@fortawesome/free-solid-svg-icons";
 
-export default function Search() {
+export default function Search({ setWeatherData }) {
+  const [city, setCity] = useState("");
   const apiKey = "202t323f488633ba301345o8b10a7e9f";
-  let city = "Sydney";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+
+  const handleInputChange = (e) => {
+    setCity(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.get(
+        `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`
+      );
+      console.log(response.data);
+      setWeatherData({
+        temperature: response.data.temperature,
+      });
+    } catch (error) {
+      console.error("Error fetching weather data:", error);
+    }
+  };
 
   return (
     <div className="Search">
-      <form id="location-search">
+      <form id="location-search" onSubmit={handleSubmit}>
         <div className="row d-flex justify-content-center text-center search-engine">
           <div className="col-7 search-box">
             <input
-              type="search"
+              type="text"
               placeholder="Enter your city"
               className="form-control shadow-sm"
               autofocus="on"
               id="search-input"
+              onChange={handleInputChange}
+              value={city}
             />
           </div>
           <div className="col-md-auto">
@@ -32,10 +53,6 @@ export default function Search() {
           <div className="col-md-auto p-0">
             <button className="btn btn-light exact-location-btn">
               <FontAwesomeIcon icon={faLocationCrosshairs} />
-              {/* <i
-                id="current-location-btn"
-                className="fa-solid fa-location-crosshairs"
-              ></i> */}
             </button>
           </div>
         </div>

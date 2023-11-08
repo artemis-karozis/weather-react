@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import "./styles.css";
@@ -13,15 +13,17 @@ import TodayTemperature from "./TodayTemperature";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
-function App() {
+export default function App() {
+  const [weatherData, setWeatherData] = useState(null);
+
   return (
     <div className="App">
       <div className="container">
         <div className="container-wrapper">
-          <Search />
+          <Search setWeatherData={setWeatherData} />
           <div className="row mx-auto">
             <div className="col-sm-6 d-flex align-items-center justify-content-center today">
-              <TodayTemperature />
+              <TodayTemperature weatherData={weatherData} />
             </div>
             <div className="col-sm-6 future">
               <Forecast />
@@ -33,5 +35,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
