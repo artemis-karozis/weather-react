@@ -11,7 +11,7 @@ export default function TodayTemperature({ weatherData }) {
       </div>
       <img src="" alt="" id="current-icon" />
       <h2 className="today-temp">
-        <span id="todays-temperature-main">20</span>
+        <span id="todays-temperature-main">25</span>
         <span className="degree-symbol">°C</span>
       </h2>
 

@@ -20,7 +20,11 @@ export default function Search({ setWeatherData }) {
       );
       console.log(response.data);
       setWeatherData({
-        temperature: response.data.temperature,
+        temperature: response.data.temperature.current,
+        city: response.data.city,
+        humidity: response.data.temperature.humidity,
+        wind: response.data.wind.speed,
+        country: response.data.country,
       });
     } catch (error) {
       console.error("Error fetching weather data:", error);
